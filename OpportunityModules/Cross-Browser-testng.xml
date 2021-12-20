@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite" thread-count="5">
+	<test name="TestRunner-chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.vtiger.comcast.opportunitytest.TC_53SearchOppUsingDoesNotConatains" />
+			<class
+				name="com.vtiger.comcast.opportunitytest.TC_54SearchOppUsingAssignedTo" />
+		</classes>
+	</test>
+
+	<test name="TestRunner-IE">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class
+				name="com.vtiger.comcast.opportunitytest.TC_53SearchOppUsingDoesNotConatains" />
+			<class
+				name="com.vtiger.comcast.opportunitytest.TC_54SearchOppUsingAssignedTo" />
+		</classes>
+	</test>
+</suite> 
